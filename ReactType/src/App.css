@@ -1,0 +1,184 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ***********************************************---------------------------++++++++++++++++++++++++++************************************ */
+
+/* .lpp{
+  position: relative;
+  z-index: 1;
+}
+
+.mod{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.7;
+  border: 3px solid red;
+  color: white;
+} */
+
+/* **************************************************************************************************************************************** */
+
+/* 
+ html {
+  font-size: 90.5%;
+}
+
+body {
+  min-height: 100vh;
+  width: 100vw;
+  color: aliceblue;
+  font-family: "Raleway", sans-serif;
+}
+
+
+.ko {
+  text-align: center;
+  margin-top: 25px;
+  background-color: rgb(153, 177, 197);
+  margin-left: 800px;
+  margin-right: 850px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.lp{
+  margin-top: 50px;
+}
+
+ 
+p {
+  font-size: 4rem;
+}
+
+h1 {
+  font-size: 7rem;
+  text-transform: capitalize;
+}
+
+form {
+  background: rgb(116, 138, 194);
+  padding: 2rem;
+  border-radius: 10rem;
+  outline: none;
+  text-align: center; 
+ }
+
+form label {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+form input {
+  min-width: 20rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  text-align: left;
+  border: none;
+  margin-top: 0.3rem;
+  padding: 0.5rem;
+  outline: none;
+} */
+
+/* 
+button[type] {
+  border: none;
+  padding: 0.4rem 1rem;
+  text-align: center;
+  margin-top: 1rem;
+  font-family: "Raleway", sans-serif;
+  border-radius: 0.3rem; */
+  /* cursor: pointer; */
+  /* outline: none; */
+/* } */
+
+/* button[type]:hover {
+  background-color: darkblue;
+  color: aliceblue;
+} */

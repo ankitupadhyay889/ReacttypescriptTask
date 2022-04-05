@@ -24,5 +24,4 @@ return (
 	</div>
 );
 }
-
 export default Onemore;

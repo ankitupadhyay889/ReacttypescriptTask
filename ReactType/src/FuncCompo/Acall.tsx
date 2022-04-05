@@ -15,6 +15,8 @@
 // import Chhart from "./thirdparty/Chhart";
 // import Contact from "./arealdbfire/Contact";
 
+// import { Neeww } from "./websock/Neeww";
+
 import Another from './websock/Another';
 
 // import Firstone from "./websock/Firstone";
@@ -27,6 +29,7 @@ const Acall = () => {
 
     return (
         <div>
+            {/* <Neeww /> */}
             <Another/>
             {/* <Firstone /> */}
             {/* <Onemore /> */}

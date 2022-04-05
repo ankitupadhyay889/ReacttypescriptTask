@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react';
 
-export default function Firstone() {
+const Firstone = () => {
+  
   useEffect(() => {
     let ws = new WebSocket('wss://ws.kraken.com/');
     ws.onopen = () => console.log('ws opened');
@@ -20,3 +21,5 @@ export default function Firstone() {
     <div>hooks + ws</div>
   )
 }
+
+export default Firstone;

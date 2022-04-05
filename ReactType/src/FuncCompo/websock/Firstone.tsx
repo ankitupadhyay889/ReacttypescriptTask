@@ -10,7 +10,7 @@ const Firstone = () => {
     ws.onmessage = e => {
       const message = JSON.parse(e.data);
       console.log('e', message);
-    };
+    }
 
     return () => {
       ws.close();

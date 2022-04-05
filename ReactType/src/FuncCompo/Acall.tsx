@@ -15,7 +15,7 @@
 // import Chhart from "./thirdparty/Chhart";
 // import Contact from "./arealdbfire/Contact";
 
-import Another from "./websock/Another";
+import Another from './websock/Another';
 
 // import Firstone from "./websock/Firstone";
 

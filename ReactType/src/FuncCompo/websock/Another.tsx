@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 function  Another() {
-  //give an initial state so that the data won't be undefined at start
+  
   const [bids, setBids] = useState([0]);
 
   const ws = new WebSocket("wss://ws.bitstamp.net");

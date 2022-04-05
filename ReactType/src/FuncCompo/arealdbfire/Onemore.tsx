@@ -12,7 +12,6 @@ const subm = async(e: any) => {
         name: Name,
         password: Password
     });
-    
     setNam("");
     setPassw("");
 }

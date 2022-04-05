@@ -19,8 +19,7 @@ const Contact = () => {
 
     const hanInp = (e: ChangeEvent<HTMLInputElement>) => {
         const name = e.currentTarget.name
-        const value = e.currentTarget.value;
-        
+        const value = e.currentTarget.value;        
         setuseRegis({...useRegis , [name]: value})
     }
 

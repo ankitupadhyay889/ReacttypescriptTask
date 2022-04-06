@@ -1,5 +1,5 @@
 import React from 'react';
-import Firenotifica from './Thirrdparty/Firenotifica';
+import Firenotifica from './Firenoti/Firenotifica';
 // import Goomap from './Thirrdparty/Goomap';
 // import Googl from './Thirrdparty/Googl';
 // import Chaart from './Thirrdparty/Chaart';

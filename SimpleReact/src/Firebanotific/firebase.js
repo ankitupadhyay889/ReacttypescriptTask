@@ -1,5 +1,5 @@
 import {initializeApp} from "firebase/app";
-import { getMessaging, getToken, onMessage } from "firebase/messaging";
+import { getMessaging, getToken } from "firebase/messaging";
 
 const firebaseConfig  = {
     apiKey: "AIzaSyBUJe9abStmnrPbLGKd9QD_Ec8Ndt_dfOo",
@@ -30,9 +30,3 @@ export const requestForToken = () => {
         console.log('An error occurred while retrieving token. ', err);
       });
   };
-export const onMessageListener = () =>
-  new Promise((resolve) => {
-    onMessage(messaging, (payload) => {
-      resolve(payload);
-    });
-});

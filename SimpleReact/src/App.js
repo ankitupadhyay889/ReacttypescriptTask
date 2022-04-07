@@ -1,6 +1,6 @@
 import React from 'react';
 import "./App.css";
-import Firecall from './Firenoti/Firecall';
+import Firecall from './Firebanotific/Firecall';
 // import Social from './Social';
 
 const App = () => {

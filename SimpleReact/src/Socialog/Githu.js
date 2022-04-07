@@ -1,16 +1,15 @@
 import React from 'react';
-import GitHubLogin from "react-github-login";
+import LoginGithub from 'react-login-github';
 
 const Goog = () => {
 
-    const responseGoogle = (response) => {
-        console.log(response);
-    }
+    const onSuccess = response => console.log(response);
+    const onFailure = response => console.error(response);
 
     return (
-            <GitHubLogin 
-            clientId="27988343c575c5c1d16e "
-            onSuccess={responseGoogle}/>
+        <LoginGithub clientId="27988343c575c5c1d16e"
+        onSuccess={onSuccess}
+        onFailure={onFailure}/>
     );
 };
 

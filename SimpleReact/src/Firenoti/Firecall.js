@@ -1,9 +1,14 @@
-import React from 'react';
-import firebase from './Firebaseinit';
+import React, { Component } from 'react'
+import firebase from './firebase';
 
-const Firecall = () => {
+export default class Firecall extends Component {
 
-    const login = () => {
+    constructor(props){
+        super(props);
+        this.state = {}
+    }
+
+    componentDidMount(){
         const messaging = firebase.messaging()
         messaging.requestPermission().then(() => {
             return messaging.getToken()
@@ -12,13 +17,13 @@ const Firecall = () => {
         }).catch(() => {
             console.log("error in code.");
         })
-    }    
+    }
 
+  render() {
     return (
-        <div>
-            <button onClick={login}> TokenGen </button>
-        </div>
-    );
-};
-
-export default Firecall;
+      <div>
+          <p>Push</p>
+      </div>
+    )
+  }
+}

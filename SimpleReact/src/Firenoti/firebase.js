@@ -1,6 +1,6 @@
-import {initializeApp} from "firebase/app";
+import firebase from "firebase/compat/app";
 
-const firebaseConfig  = {
+const config  = {
     apiKey: "AIzaSyBUJe9abStmnrPbLGKd9QD_Ec8Ndt_dfOo",
     authDomain: "onemoretype-5a143.firebaseapp.com",
     projectId: "onemoretype-5a143",
@@ -10,4 +10,5 @@ const firebaseConfig  = {
 };
 
 // Initialize Firebase
-initializeApp(firebaseConfig);
+firebase.initializeApp(config);
+export default firebase;

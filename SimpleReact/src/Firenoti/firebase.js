@@ -1,6 +1,7 @@
-import firebase from "firebase/compat/app";
+import {initializeApp} from "firebase/app";
+import { getMessaging, getToken } from "firebase/messaging";
 
-const config  = {
+const firebaseConfig  = {
     apiKey: "AIzaSyBUJe9abStmnrPbLGKd9QD_Ec8Ndt_dfOo",
     authDomain: "onemoretype-5a143.firebaseapp.com",
     projectId: "onemoretype-5a143",
@@ -10,5 +11,20 @@ const config  = {
 };
 
 // Initialize Firebase
-firebase.initializeApp(config);
-export default firebase;
+const app = initializeApp(firebaseConfig);
+
+const messaging = getMessaging(app);
+
+export const getToken = (setTokenFound) => {
+    return getToken(messaging, {vapidKey: 'BJGyWUPOute3qolRAJqnUyIwbpPxexNEAh-9Z5MzyXvTiD1Hvy_YMeqa87_WFJXPXBJjppZowSmgPulrRvWbltM'}).then((currentToken) => {
+      if (currentToken) {
+        console.log('current token for client: ', currentToken);
+        setTokenFound(true);
+      } else {
+        console.log('No registration token available. Request permission to generate one.');
+        setTokenFound(false);
+      }
+    }).catch((err) => {
+      console.log('An error occurred while retrieving token. ', err);
+    });
+  }

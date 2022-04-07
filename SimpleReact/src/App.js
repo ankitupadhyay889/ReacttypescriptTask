@@ -1,11 +1,13 @@
 import React from 'react';
 import "./App.css";
-import Social from './Social';
+import Firecall from './Firenoti/Firecall';
+// import Social from './Social';
 
 const App = () => {
   return (
     <div className='App'>
-        <Social />
+        {/* <Social /> */}
+        <Firecall />
     </div>
   );
 };

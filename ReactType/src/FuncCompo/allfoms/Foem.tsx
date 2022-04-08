@@ -1,4 +1,4 @@
-import React, { ChangeEvent, useState } from 'react';
+import React, { useState } from 'react';
 import { TextField , Button } from '@mui/material';
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -15,7 +15,7 @@ const Foem = () => {
         resolver: yupResolver(dat),
       });
       
-    const [data, setdata] = useState<Object>("")
+    const [data, setdata] = useState<any>("")
 
     const [show, setshow] = useState<Array<any>>([]);
 
@@ -26,8 +26,7 @@ const Foem = () => {
     //     setdata({...data , [name]:value })
     // }
 
-    const onSu = (e: any) =>{
-        e.preventDefault();
+    const onSu = () =>{
         const sbhi = {...data};
         setshow([...show , sbhi]);
         setdata({fullname: "" , username: "" , email: ""});

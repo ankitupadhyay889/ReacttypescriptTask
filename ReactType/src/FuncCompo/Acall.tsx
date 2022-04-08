@@ -15,8 +15,11 @@
 // import Chhart from "./thirdparty/Chhart";
 // import Contact from "./arealdbfire/Contact";
 
-import Firstapi from "./listkey/Firstapi";
+// import Nrmlform from "./allfoms/Nrmlform";
+// import Formyp from "./allfoms/Formyp";
+import Foem from "./allfoms/Foem";
 
+// import Firstapi from "./listkey/Firstapi";
 // import Multiitem from "./listkey/Multiitem";
 
 // import { Neeww } from "./websock/Neeww";
@@ -30,7 +33,11 @@ const Acall = () => {
 
     return (
         <div>
-            <Firstapi />
+            {/* <Nrmlform /> */}
+            {/* <Formyp /> */}
+            <Foem />
+            
+            {/* <Firstapi /> */}
             {/* <Multiitem/> */}
 
 

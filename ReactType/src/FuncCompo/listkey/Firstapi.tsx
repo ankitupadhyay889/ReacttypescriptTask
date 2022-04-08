@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios,{AxiosResponse} from "axios";
 import List from '@mui/material/List';
-import { Button } from '@mui/material';
 
 type Sma = {
     title: string;
@@ -24,17 +23,8 @@ const Firstapi = () => {
       getCovid()
     }, [])
     
-
     return (
         <>
-        <div>
-            <button className="mdc-button foo-button">
-  <div className="mdc-button__ripple"></div>
-  <span className="mdc-button__label">Button</span>
-</button>
-<Button>Button</Button>
-
-        </div>
             <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
                 {
                     covid.map((item , id: number) => {

@@ -17,12 +17,13 @@ const Nrmlform = () => {
       <div>
         <p> {data} </p>
         <form onSubmit={handleSubmit(onSubmit)}>
-        <input {...register('firstName')} />
+        <input {...register('firstName', { required: true })} />
+        {errors.firstName && <p>First name is required.</p>}
         <br/>
         <input {...register('lastName', { required: true })} />
         {errors.lastName && <p>Last name is required.</p>}
         <br/>
-        <input {...register('age', { pattern: /\d+/ })} />
+        <input {...register('age', { required: true })} />
         {errors.age && <p>Please enter number for age.</p>}
         <br/>
         <button type="submit">Submit</button>

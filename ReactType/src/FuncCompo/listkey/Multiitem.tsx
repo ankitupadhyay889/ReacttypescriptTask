@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
 
 const deF = [        
-    { id: "1", value: "Ankit" },
-    { id: "2", value: "Rahul" },
-    { id: "3", value: "Mohit" },
-    { id: "4", value: "Sanjay" }, 
+    { id: "1", value: "Ankit1" },
+    { id: "2", value: "Rahul2" },
+    { id: "3", value: "Mohit3" },
+    { id: "4", value: "Sanjay4" }, 
 ];
-
-// you also define obect in useState.
 
 const Multiitem = () => {
 

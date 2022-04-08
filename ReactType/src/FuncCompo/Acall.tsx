@@ -15,12 +15,13 @@
 // import Chhart from "./thirdparty/Chhart";
 // import Contact from "./arealdbfire/Contact";
 
+import Firstapi from "./listkey/Firstapi";
+
+// import Multiitem from "./listkey/Multiitem";
+
 // import { Neeww } from "./websock/Neeww";
-
-import Another from './websock/Another';
-
+// import Another from './websock/Another';
 // import Firstone from "./websock/Firstone";
-
 // import Onemore from "./arealdbfire/Onemore";
 
 const Acall = () => {
@@ -29,8 +30,12 @@ const Acall = () => {
 
     return (
         <div>
+            <Firstapi />
+            {/* <Multiitem/> */}
+
+
             {/* <Neeww /> */}
-            <Another/>
+            {/* <Another/> */}
             {/* <Firstone /> */}
             {/* <Onemore /> */}
 

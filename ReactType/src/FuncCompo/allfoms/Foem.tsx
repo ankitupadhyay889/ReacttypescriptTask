@@ -1,75 +1,47 @@
 import React, { useState } from 'react';
-import { TextField , Button } from '@mui/material';
-import { useForm } from "react-hook-form";
-import { yupResolver } from "@hookform/resolvers/yup";
-import * as yup from 'yup';
 
-const dat = yup.object().shape({
-    fullname: yup.string().required(),
-    username: yup.string().required(),
-    email: yup.string().email().required(),
-});
+// this is controlled form component
 
-const Foem = () => {
-    const {register, handleSubmit, formState:{ errors }} = useForm({
-        resolver: yupResolver(dat),
-      });
-      
-    const [data, setdata] = useState<any>("")
+const Simpleform = () => {
 
-    const [show, setshow] = useState<Array<any>>([]);
+    const [dt, setdt] = useState<string>("");
+    const [err, seterr] = useState({dt:""})
 
-    // const hanInp = (e: any) => {
-    //     const name = e.currentTarget.name;
-    //     const value = e.currentTarget.value;
+    const sub = (e: any) => {
+        e.preventDefault(); 
+        let cou = 0
+        if(dt === ""){
+            cou++
+            seterr((prevState)=>{
+                return{...prevState , dt: "Name is required"}
+            })
+        }else{
+            seterr((prevState)=>{
+                return{...prevState , dt: ""}
+            })
+        }
+        if(cou===0){
+            const formdata = {dt};
+            console.log(formdata);
+            setdt("");
+        }
+    }
 
-    //     setdata({...data , [name]:value })
-    // }
-
-    const onSu = () =>{
-        const sbhi = {...data};
-        setshow([...show , sbhi]);
-        setdata({fullname: "" , username: "" , email: ""});
+    const haC = (e:any) => {
+        setdt(e.currentTarget.value)
     }
 
     return (
         <div>
-            <form onSubmit={handleSubmit(onSu)}>
-                <TextField {...register("fullname")} type="text" id="standard-basic" label="Enter FullName" variant="filled"
-                name="fullname"  />
-                <p>{errors.fullname?.message}</p>
-                
-                <br/><br/>
-
-                <TextField {...register("username")} type="text" id="standard-basic" label="Enter Username" variant="filled"
-                name="username"  />
-                <p>{errors.username?.message}</p>
-                
-                <br/><br/>
-
-                <TextField {...register("email")} type="text" id="standard-basic" label="Enter Email" variant="filled"
-                name="email"  />
-                <p>{errors.email?.message}</p>
-                
-                <br/><br/>
-
-                <Button type="submit" variant="outlined"> Register </Button>
-
+            <form onSubmit={sub}>
+                <label> Enter name: </label> 
+                <input type="text" name="name" value={dt} onChange={haC} />
+                {err.dt && <p> {err.dt} </p>}
+                <br/>
+                <button type="submit">Submit</button>
             </form>
-            <div>
-                {
-                    show.map((curElem , id: number) => {
-                        const {fullname , username , email} = curElem
-                        return(
-                            <div key={id}>
-                                <h2> {fullname} -- {username} -- {email} </h2>
-                            </div>
-                        )
-                    })
-                }
-            </div>
         </div>
     );
 };
 
-export default Foem;
+export default Simpleform;

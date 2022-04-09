@@ -17,7 +17,8 @@
 
 // import Nrmlform from "./allfoms/Nrmlform";
 // import Formyp from "./allfoms/Formyp";
-import Foem from "./allfoms/Foem";
+// import Foem from "./allfoms/Foem";
+import Newone from "./allfoms/Newone";
 
 // import Firstapi from "./listkey/Firstapi";
 // import Multiitem from "./listkey/Multiitem";
@@ -33,9 +34,10 @@ const Acall = () => {
 
     return (
         <div>
+            <Newone />
+            {/* <Foem /> */}
             {/* <Nrmlform /> */}
             {/* <Formyp /> */}
-            <Foem />
             
             {/* <Firstapi /> */}
             {/* <Multiitem/> */}

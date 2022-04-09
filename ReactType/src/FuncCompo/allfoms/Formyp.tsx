@@ -10,9 +10,11 @@ const dat = yup.object().shape({
 });
 
 const Formyp = () => {
+  
   const { register, handleSubmit, formState:{ errors }, reset } = useForm({
     resolver: yupResolver(dat),
   });
+
   const onSu = (data: any) => {
     console.log({ data });
     reset();

@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 export default function Newone() {
   const { register, formState: { errors }, handleSubmit } = useForm();
 
-  const onSubmit = (data: any) => {
+  const onSubmit = (data:any) => {
       console.log(data);
   }
   

@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 const Simpleform = () => {
 
     const [dt, setdt] = useState<string>("");
-    const [err, seterr] = useState({dt:""})
+    const [err, seterr] = useState({dt:""});
 
     const sub = (e: any) => {
         e.preventDefault(); 

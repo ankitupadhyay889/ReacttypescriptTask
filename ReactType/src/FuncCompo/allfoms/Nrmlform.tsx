@@ -7,7 +7,6 @@ import { useForm } from 'react-hook-form';
 const Nrmlform = () => {
   
   const {register , handleSubmit , formState: { errors }} = useForm();
-
   const [data, setdata] = useState<string | number>()
 
   const onSubmit = (data: any) => {

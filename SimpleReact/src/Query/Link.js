@@ -22,5 +22,4 @@ const Linkin = () => {
         </div>
     );
 };
-
 export default Linkin;

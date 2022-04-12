@@ -1,14 +1,15 @@
 import React from 'react';
-import "./Styl.css";
+import './Styl.css';
 
 const Navv = () => {
     return (
-        <div class="topnav" id="myTopnav">
-            <a href="#home" class="active">Home</a>
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
-        </div>
+        <nav>
+            <ul className="list">
+                <li className="items">Home</li>
+                <li className="items">Services</li>
+                <li className="items">Contact</li>
+            </ul>
+        </nav>
     );
 };
 

@@ -2,15 +2,15 @@
     "superheroes":[
         {
             "id": 1,
-            "name": "BatMan"
+            "name": "Bat-Man"
         },
         {
             "id": 2,
-            "name": "SuperMan"
+            "name": "Super-Man"
         },
         {
             "id": 3,
-            "name": "SpiderMan"
+            "name": "Spider-Man"
         }
     ]
 }

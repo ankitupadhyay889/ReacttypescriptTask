@@ -11,7 +11,7 @@ import {QueryClientProvider , QueryClient} from "react-query";
 const quClient = new QueryClient()
 const App = () => {
   return (
-    <div className='App'>
+    <div className="App">
       <QueryClientProvider client={quClient}>
         <Link />
         <Routes>

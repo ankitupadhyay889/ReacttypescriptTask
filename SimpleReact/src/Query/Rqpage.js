@@ -13,7 +13,6 @@ const Rqpage = () => {
             <h2>Loading....</h2>
         )
     }
-
     if(isError){
         return(
             <h2> {error.message} </h2>

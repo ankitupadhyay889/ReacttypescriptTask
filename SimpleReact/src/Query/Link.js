@@ -8,13 +8,13 @@ const Linkin = () => {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav ml-auto">
                     <li className="nav-item active">
-                        <NavLink className="nav-link" to="/">Home</NavLink>
+                        <NavLink className="nav-link" to="/"> Home </NavLink>
                     </li>
                     <li className="nav-item active">
-                        <NavLink className="nav-link" to="/normal">Normal</NavLink>
+                        <NavLink className="nav-link" to="/normal"> Normal </NavLink>
                     </li>
                     <li className="nav-item active">
-                        <NavLink className="nav-link" to="/rqpage">Rqpage</NavLink>
+                        <NavLink className="nav-link" to="/rqpage"> Rqpage </NavLink>
                     </li>
                     </ul>
                 </div>

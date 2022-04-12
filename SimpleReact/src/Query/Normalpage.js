@@ -35,7 +35,7 @@ const Normalpage = () => {
             {
                 data.map((hero) =>{
                     return(
-                        <div key={hero.id}> {hero.id} {hero.name} </div>
+                        <div key={hero.id}>{hero.id} {hero.name}</div>
                     )
                 })
             }

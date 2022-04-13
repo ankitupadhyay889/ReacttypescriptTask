@@ -1,10 +1,11 @@
 import React from 'react';
-import All from "../StyledCompo/All";
+import Web from './Web';
+// import All from "../StyledCompo/All";
 
 const Call = () => {
     return (
         <div>
-            <All />
+            <Web />
         </div>
     );
 };

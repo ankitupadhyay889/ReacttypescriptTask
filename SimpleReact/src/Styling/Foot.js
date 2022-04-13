@@ -14,7 +14,6 @@ const Foot = () => {
                 <li><a href="/#"><i className="fa fa-linkedin-square"></i></a></li>
             </ul>
             </div>
-
             </footer>
         </div>
     );

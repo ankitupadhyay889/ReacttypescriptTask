@@ -8,4 +8,4 @@ color: palevioletred;
 margin: 0.5em 1em;
 padding: 0.25em 1em;
 `
-export default StyledButton
+export default StyledButton;

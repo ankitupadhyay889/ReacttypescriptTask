@@ -6,4 +6,4 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter} from 'react-router-dom';
 import Call from './Styling/Call';
 
-ReactDOM.render(<BrowserRouter><Call /></BrowserRouter> ,document.getElementById('root'));
+ReactDOM.render(<BrowserRouter><Call /></BrowserRouter>,document.getElementById('root'));

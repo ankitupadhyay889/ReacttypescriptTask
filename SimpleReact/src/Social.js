@@ -7,9 +7,9 @@ const Social = () => {
     return (
         <div>
             <Faceboo />
-            <br />
+            <br /><br />
             <Goog />
-            <br />
+            <br /><br />
             <Githu />
         </div>
     );

@@ -1,4 +1,4 @@
-import './App.css';
+// import './App.css';
 import Alllcal from './FuncCompo/matriald/Alllcal';
 // import Acall from './FuncCompo/Acall';
 // import Calling from './FuncCompo/state/Calling';

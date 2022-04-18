@@ -1,5 +1,6 @@
 import './App.css';
-import Acall from './FuncCompo/Acall';
+import Alllcal from './FuncCompo/matriald/Alllcal';
+// import Acall from './FuncCompo/Acall';
 // import Calling from './FuncCompo/state/Calling';
 // import Mainapp from './FuncCompo/reduxre/Mainapp';
 // import Acall from "./FuncCompo/Acall";
@@ -18,7 +19,8 @@ import Acall from './FuncCompo/Acall';
 const App = () => {
   return (
     <div className='App'>
-        <Acall/>
+      <Alllcal />
+        {/* <Acall/> */}
 
       {/* <Calling /> */}
       {/* <Useefct /> */}

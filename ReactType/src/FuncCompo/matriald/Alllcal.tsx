@@ -2,7 +2,7 @@
 // import Second from "./Second";
 // import Third from "./Third";
 // import Fourthimp from "./Fourthimp";
-import Six from "./Six";
+import Seven from "./Seven";
 
 const Alllcal = () => {
     return (
@@ -12,7 +12,8 @@ const Alllcal = () => {
             {/* <Third /> */}
             {/* <Fourthimp /> */}
             {/* <Five /> */}
-            <Six />
+            {/* <Six /> */}
+            <Seven />
         </div>
     );
 };

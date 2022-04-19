@@ -1,8 +1,8 @@
 // import First from './First';
 // import Second from "./Second";
 // import Third from "./Third";
-
-import Fourthimp from "./Fourthimp";
+// import Fourthimp from "./Fourthimp";
+import Six from "./Six";
 
 const Alllcal = () => {
     return (
@@ -10,7 +10,9 @@ const Alllcal = () => {
             {/* <First /> */}
             {/* <Second /> */}
             {/* <Third /> */}
-            <Fourthimp />
+            {/* <Fourthimp /> */}
+            {/* <Five /> */}
+            <Six />
         </div>
     );
 };

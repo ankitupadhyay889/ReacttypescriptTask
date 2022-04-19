@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography';
 const Fourthimp = () => {
     return (
         <>
-        {/* column bhi likh skte ho */}
+        {/* column bhi likh skte hai */}
             <Grid container spacing={2} direction="row">
                 <Grid item sm={6} xs={12} lg={3} md={4}>
                     <Box bgcolor="yellow" p={5}>1</Box>

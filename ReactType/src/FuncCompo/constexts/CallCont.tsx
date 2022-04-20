@@ -12,7 +12,7 @@ const iniV = {
 }
 
 const users = {
-    name: 'Ankitji',
+    name: 'Ankit',
     rollNo: 7
 }
 

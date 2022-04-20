@@ -9,7 +9,7 @@ export type title = {
 export const ctx = createContext<title|null>(null);
 
 const sampe: title = {
-    name: "Using React Context in a Typescript App",
+    name: "Using React Context in Typescript App",
     author: "thehappybug",
 }
 

@@ -1,5 +1,5 @@
 // import './App.css';
-import Alllcal from './FuncCompo/matriald/Alllcal';
+// import Alllcal from './FuncCompo/matriald/Alllcal';
 // import Acall from './FuncCompo/Acall';
 // import Calling from './FuncCompo/state/Calling';
 // import Mainapp from './FuncCompo/reduxre/Mainapp';
@@ -14,12 +14,15 @@ import Alllcal from './FuncCompo/matriald/Alllcal';
 // import {Provider} from "react-redux";
 // import MinApp from './FuncCompo/reduxtodo/MinApp';
 
+import Basi from "./FuncCompo/constexts/Basi";
+
 // store.subscribe(() => console.log(store.getState()));
 
 const App = () => {
   return (
     <div className='App'>
-      <Alllcal />
+      <Basi />
+      {/* <Alllcal /> */}
         {/* <Acall/> */}
 
       {/* <Calling /> */}

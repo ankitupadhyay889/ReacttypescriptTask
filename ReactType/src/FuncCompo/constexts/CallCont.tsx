@@ -1,5 +1,5 @@
 import { createContext, useState } from "react";
-import Contexxho from "./Contexxho";
+// import Contexxho from "./Contexxho";
 
 export type Icont = {
     name: string;
@@ -27,7 +27,7 @@ export function CallCont() {
     return (
         <there.Provider value={use}>
             <button onClick={() => updateName('Ankit')}>Update Name</button>
-            <Contexxho />
+            {/* <Contexxho /> */}
         </there.Provider>
     )
 }

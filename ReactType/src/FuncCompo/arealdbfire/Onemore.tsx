@@ -19,7 +19,9 @@ const subm = async(e: any) => {
 return (
 	<div>
 		<input type="text" placeholder="Name" value={Name} onChange={(e) => setNam(e.target.value)}/>
+        <br/><br/>
 		<input type="text" placeholder="Password" value={Password} onChange={(e) => setPassw(e.target.value)}/>
+        <br/><br/>
 		<button onClick={subm}>Submit</button>
 	</div>
 );

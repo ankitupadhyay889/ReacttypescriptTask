@@ -42,12 +42,7 @@ const Contact = () => {
             );
     
             if(res){
-                setuseRegis({
-                    uname: "",
-                    pnumber: "",
-                    email: "",
-                    address: ""
-                });
+                setuseRegis({uname: "",pnumber: "",email: "",address: ""});
                 alert("Data Stored to Firebase");
             }
     

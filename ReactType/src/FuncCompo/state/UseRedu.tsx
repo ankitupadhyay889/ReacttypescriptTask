@@ -27,7 +27,6 @@ const UseRedu = () => {
     const Ino = () => {
         dispatch({type : "incre"})
     }
-
     const Dno = () => {
         if(coutstate.cout > 0){
             dispatch({type : "decre"})

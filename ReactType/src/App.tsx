@@ -14,14 +14,18 @@
 // import {Provider} from "react-redux";
 // import MinApp from './FuncCompo/reduxtodo/MinApp';
 
-import Basi from "./FuncCompo/constexts/Basi";
+import Linkinf from "./Profj/Linkinf";
+
+
+// import Basi from "./FuncCompo/constexts/Basi";
 
 // store.subscribe(() => console.log(store.getState()));
 
 const App = () => {
   return (
     <div className='App'>
-      <Basi />
+      <Linkinf />
+      {/* <Basi /> */}
       {/* <Alllcal /> */}
         {/* <Acall/> */}
 

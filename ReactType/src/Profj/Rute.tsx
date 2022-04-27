@@ -7,8 +7,8 @@ const Rute = () => {
     return (
         <>
             <Routes>
-                <Route path="/" element={<Hme />} />
-                <Route path='/data' element={<Apical />} />
+                <Route path="/" element={<Apical />} />
+                <Route path='/data' element={<Hme />} />
             </Routes>  
         </>
     );

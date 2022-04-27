@@ -1,20 +1,22 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import Rute from './Rute';
 
 const Linkinf = () => {
+
     return (
         <>
-            <nav>
-                <ul>
-                    <li>
-                        <Link to="/">Home</Link>
-                        <Link to="/data">Data</Link>
+        <div>
+            <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul className="navbar-nav ml-auto">
+                    <li className="nav-item active">
+                        <NavLink className="nav-link" to="/">All Api Data</NavLink>
                     </li>
-                </ul>
+                    </ul>
+                </div>
             </nav>
-            <hr/>
             <Rute />
+        </div>
         </>
     );
 };

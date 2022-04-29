@@ -156,6 +156,7 @@ const A = () => {
                 </Table>
             </TableContainer>
             {show ? <ModelCao /> : null}
+            
             <div> {shoPag()} </div>
             {/* {
                 <ReactPaginate 

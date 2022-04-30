@@ -1,15 +1,8 @@
 import { useEffect, useState } from 'react';
-import Table from '@mui/material/Table';
-import TableBody from '@mui/material/TableBody';
-import TableCell from '@mui/material/TableCell';
-import TableContainer from '@mui/material/TableContainer';
-import TableHead from '@mui/material/TableHead';
-import TableRow from '@mui/material/TableRow';
-import { Container, Typography , TextField } from '@mui/material';
+import { Container, Typography , TextField, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from '@mui/material';
 import { Box } from '@mui/system';
 import Modal from '@mui/material/Modal';
-import Pagination  from './Pagination';
-// import ReactPaginate from 'react-paginate';
+import { Pagination, Stack } from '@mui/material';
 
 const style = {
     position: 'absolute' as 'absolute',
@@ -29,58 +22,30 @@ const A = () => {
     const [posts, setposts] = useState<any[]>([])
     const [filtres, setFilt] = useState<any[]>([]);
     const [searchInp, setSearchInp] = useState('');
-    const [totapos , settotapos] = useState<any>(0);
-    const [postperpage] = useState<any>(10);
-    const [currentPage, setcurrentPage] = useState<number>(1);
+    const [pageCount, setPageCount] = useState(0)
     const [model, setmodel] = useState<any>([])
     const [showmod, setshowmod] = useState<any>(false)
     const [show, setshow] = useState<boolean>(false)
+    
     const hanSho = () => setshow(true)
     const hanClo = () => setshow(false)
-    
-    useEffect(() => {
-        getD()
-    }, [])
 
-    const getD = () => {
-        try {
-            setInterval(async() => {
-                const res = await fetch("https://hn.algolia.com/api/v1/search_by_date?tags=story&page=0")
-                const result = await res.json();
-                // console.log(result.hits);
-                setposts(result.hits);
-                settotapos(result.hits.length);
-                // setPageCount(result.nbPages)
-            },10000)
-        } catch (error) {
-            console.log(error)
-        }
+
+    const loadData = async() => {
+        await fetch(`https://hn.algolia.com/api/v1/search_by_date?tags=story&page=${pageCount}`)
+        .then (res => res.json())
+        .then((result) => {
+            console.log([...result.hits])
+            setposts([...result.hits]);
+            setPageCount(pageCount + 1)
+        })
+        .catch((e) => console.error(e));
     }
-
-    // const handlePageChange = (selectedObject:any) => {
-	// 	setcurrentPage(selectedObject.selected);
-	// 	getD();
-	// };
-    const indPa = currentPage + postperpage;
-    const indeFirpa = indPa - postperpage;
-    const currntPos = posts.slice(indeFirpa , indPa);
-    const paginate = (pageNum:any) => setcurrentPage(pageNum);
-    const prePag = () => setcurrentPage(currentPage - 1);
-    const nexPag = () => setcurrentPage(currentPage + 1);
-
-    const shoPag = () => {
-        return(
-            <Pagination 
-            postperpage={postperpage}
-            totalPost={totapos}
-            currentPage = {currentPage}
-            paginate={paginate}
-            prevPage={prePag}
-            nextPage={nexPag}
-            />
-        )
-    }
-
+        useEffect(() => {
+            setInterval(() => {
+                loadData()
+            }, 10000)
+        }, [])
 
     const tood = () => {
         setshowmod(hanSho)
@@ -139,7 +104,7 @@ const A = () => {
                             )
                         })
                     ): (
-                        currntPos.slice(0,5).map((item:any ,i)=>{
+                        posts.slice(0,5).map((item:any ,i)=>{
                             return(
                                 <TableRow key={i} onClick={(e) => {setmodel(item) 
                                 tood()}}>
@@ -156,22 +121,17 @@ const A = () => {
                 </Table>
             </TableContainer>
             {show ? <ModelCao /> : null}
-            
-            <div> {shoPag()} </div>
-            {/* {
-                <ReactPaginate 
-                pageCount={pageCount}
-                pageRange={2}
-                marginPagesDisplayed={2}
-                onPageChange={handlePageChange}
-                containerClassName={'container'}
-                previousLinkClassName={'page'}
-                breakClassName={'page'}
-                nextLinkClassName={'page'}
-                pageClassName={'page'}
-                disabledClassName={'disabled'}
-                activeClassName={'active'}/>
-            } */}
+            <Stack>
+                <Pagination
+                    count={pageCount} 
+                    variant="outlined" 
+                    color="primary"
+                    showFirstButton={true}
+                    showLastButton={true}
+                    hideNextButton={true}
+                    hidePrevButton={true}
+                />
+            </Stack>
         </Container>
         </>
     );

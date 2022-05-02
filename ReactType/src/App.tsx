@@ -16,7 +16,7 @@
 // import Linkinf from "./Profj/Linkinf";
 // import Basi from "./FuncCompo/constexts/Basi";
 // store.subscribe(() => console.log(store.getState()));
-// import A from "./Task/A";
+// import A from "./Assingment1/A";
 
 const App = () => {
   return (

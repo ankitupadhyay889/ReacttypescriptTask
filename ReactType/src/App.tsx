@@ -16,12 +16,12 @@
 // import Linkinf from "./Profj/Linkinf";
 // import Basi from "./FuncCompo/constexts/Basi";
 // store.subscribe(() => console.log(store.getState()));
-import A from "./Task/A";
+// import A from "./Task/A";
 
 const App = () => {
   return (
     <div className='App'>
-      <A />
+      {/* <A /> */}
       {/* <Linkinf /> */}
       {/* <Basi /> */}
       {/* <Alllcal /> */}

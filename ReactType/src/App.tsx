@@ -17,7 +17,6 @@ import './App.css';
 // import Basi from "./FuncCompo/constexts/Basi";
 // store.subscribe(() => console.log(store.getState()));
 // import A from "./Assingment1/A";
-
 import Main from "./Assingment2/Main";
 
 const App = () => {

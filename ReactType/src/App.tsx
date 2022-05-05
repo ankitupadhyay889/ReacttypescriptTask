@@ -1,4 +1,4 @@
-// import './App.css';
+import './App.css';
 // import Alllcal from './FuncCompo/matriald/Alllcal';
 // import Acall from './FuncCompo/Acall';
 // import Calling from './FuncCompo/state/Calling';
@@ -18,9 +18,12 @@
 // store.subscribe(() => console.log(store.getState()));
 // import A from "./Assingment1/A";
 
+import Main from "./Assingment2/Main";
+
 const App = () => {
   return (
     <div className='App'>
+      <Main />
       {/* <A /> */}
       {/* <Linkinf /> */}
       {/* <Basi /> */}

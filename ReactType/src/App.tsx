@@ -17,12 +17,14 @@ import './App.css';
 // import Basi from "./FuncCompo/constexts/Basi";
 // store.subscribe(() => console.log(store.getState()));
 // import A from "./Assingment1/A";
-import Main from "./Assingment2/Main";
+// import Main from "./Assingment2/Main";
+import Nasa from "./Assingment3/Nasa";
 
 const App = () => {
   return (
     <div className='App'>
-      <Main />
+      <Nasa />
+      {/* <Main /> */}
       {/* <A /> */}
       {/* <Linkinf /> */}
       {/* <Basi /> */}

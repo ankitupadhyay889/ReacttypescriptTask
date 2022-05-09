@@ -19,27 +19,26 @@ const Nasa = () => {
         setis_potentially_hazardous_asteroid(data.absolute_magnitude_h)
         setnasaid("")
     }
-
     return (
         <>
-        <Container>
-            <Grid spacing={2} p={2} container alignContent="center">
-                <Grid item sm={12} xs={12} lg={12} md={12}>
-                <TextField type="text" id="standard-basic" label="Enter Asteroid ID"
-                variant="outlined" name="name" autoComplete="off" value={nasaid} onChange={(e) => setnasaid(e.target.value)} required />
-                <br/><br/>
-                <Button onClick={submit} type="submit" variant="outlined"> Submit </Button>
-                    <Card sx={{ minWidth: 275 }}>
-                        <CardContent>
-                            <Typography variant="h5" sx={{ fontSize: 30 }} color="text.secondary" gutterBottom>AstoridName: {name} </Typography>
-                            <Typography variant="h5" component="div">Nasa URL: {nasa_jpl_url} </Typography>
-                            <Typography>HazardousAsteroid: {is_potentially_hazardous_asteroid} </Typography>
-                            <Random />
-                        </CardContent>
-                    </Card>
+            <Container>
+                <Grid spacing={2} p={2} container alignContent="center">
+                    <Grid item sm={12} xs={12} lg={12} md={12}>
+                    <TextField type="text" id="standard-basic" label="Enter Asteroid ID"
+                    variant="outlined" name="name" autoComplete="off" value={nasaid} onChange={(e) => setnasaid(e.target.value)} required />
+                    <br/><br/>
+                    <Button onClick={submit} type="submit" variant="outlined"> Submit </Button>
+                        <Card sx={{ minWidth: 275 }}>
+                            <CardContent>
+                                <Typography variant="h5" sx={{ fontSize: 30 }} color="text.secondary" gutterBottom>AstoridName: {name} </Typography>
+                                <Typography variant="h5" component="div">Nasa URL: {nasa_jpl_url} </Typography>
+                                <Typography>HazardousAsteroid: {is_potentially_hazardous_asteroid} </Typography>
+                                <Random />
+                            </CardContent>
+                        </Card>
+                    </Grid>
                 </Grid>
-            </Grid>
-        </Container>
+            </Container>
         </>
     );
 };

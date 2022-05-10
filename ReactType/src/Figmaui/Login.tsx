@@ -34,9 +34,7 @@ const Login = () => {
                                 </Grid>
                             </Grid>
                         </Box>
-                        <Grid>
-                            <Button id='btn'>Get OTP</Button>
-                        </Grid>
+                        <Grid><Button id='btn'>Get OTP</Button></Grid>
                     </Grid>
                     <Grid className="ban" item lg={8} md={6} sm={12} xs={12}>
                         <img src={banner} alt="ban"/>

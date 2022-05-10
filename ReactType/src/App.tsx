@@ -1,4 +1,5 @@
 import './App.css';
+import Login from './Figmaui/Login';
 // import Alllcal from './FuncCompo/matriald/Alllcal';
 // import Acall from './FuncCompo/Acall';
 // import Calling from './FuncCompo/state/Calling';
@@ -18,13 +19,14 @@ import './App.css';
 // store.subscribe(() => console.log(store.getState()));
 // import A from "./Assingment1/A";
 // import Main from "./Assingment2/Main";
-import Nasa from "./Assingment3/Nasa";
+// import Nasa from "./Assingment3/Nasa";
 
 
 const App = () => {
   return (
     <div className='App'>
-      <Nasa />
+      <Login />
+      {/* <Nasa /> */}
       {/* <Main /> */}
       {/* <A /> */}
       {/* <Linkinf /> */}

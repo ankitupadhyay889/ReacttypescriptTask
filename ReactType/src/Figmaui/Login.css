@@ -1,0 +1,143 @@
+.cona{
+    margin: 75px auto;
+}
+
+.ban img{
+    width: 100%;
+}
+
+.logo{
+    text-align: center;
+    padding-top:95px  ;
+}
+
+.logo h1{
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 44px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #161A1D;
+}
+  
+.logo h5{
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #A2A3A5;
+}
+
+.form{
+    margin-top: 53px;
+    border-bottom: 2px solid #E8E8E8;
+    padding: 15px;
+    text-align: left;
+  
+}
+
+.form input{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    text-transform: capitalize;
+    color: #161A1D;
+    border: none;
+    margin-top: 15px;
+    padding-left: 15px;
+}
+
+.form input::placeholder{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    text-transform: capitalize;
+    color: #161A1D;
+}
+
+.form select{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: capitalize;
+    color: #161A1D;
+    border: none;
+    position: relative;
+    top: 2px;
+    left: 7px;
+}
+
+.form .flag-img{
+    width: 28px;
+    height: 28px;  
+}
+ 
+.flag{
+    padding-top: 14px;
+}
+
+.form input:focus{
+    outline: none;
+}
+
+.inputfield{
+    width: 90%;
+}
+
+.input img{
+    position: absolute;
+    top: 18px;
+    right: 0;
+    opacity: 0.5;
+}
+
+.input{
+    position: relative;
+}
+
+.input::before{
+    content: "";
+    width: 2px;
+    height: 70%;
+    background-color: #E8E8E8;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+#btn{
+    width: 347px;
+    height: 80px;
+    background-color: #DF201F;
+    box-shadow: 2px 2px 25px 2px rgba(223, 32, 31, 0.5);
+    border-radius: 60px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    margin-top: 79px;
+    margin-bottom: 70px;
+}
+
+@media screen and (max-width:768px) {
+    #btn{
+      width: 250px;
+      height: 60px;
+      margin-top: 50px;
+    }
+}

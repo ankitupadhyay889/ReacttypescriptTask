@@ -1,6 +1,5 @@
 import React from 'react';
 import { fireEvent, render, screen} from '@testing-library/react';
-// import userEvent from '@testing-library/user-event'
 import Form from "./Form";
 
 describe("Test the form component" , () => {
@@ -18,22 +17,22 @@ describe("Test the form component" , () => {
         expect(textInput).toHaveAttribute("type", "text")
     })
 
-    // test("after submit input field empty" , () => {
-    //     const {getByTestId} = render(<Form />);
-    //     const emptyAfter = getByTestId("sub");
-    //     const inputElementNode = screen.getAllByPlaceholderText("Enter Name");
-    //     fireEvent.click(emptyAfter);
-    //     expect(inputElementNode.values).toMatch("")
-    // })
+    test("after submit input field empty" , () => {
+        const {getByTestId} = render(<Form />);
+        const emptyAfter = getByTestId("sub");
+        const inputElementNode = screen.getByTestId("name");
+        fireEvent.click(emptyAfter);
+        expect(inputElementNode).toHaveTextContent("")
+    })
 
-    // test("after submit input field" , () => {
-    //     render(<Form />);
-    //     const submitBtn = screen.getByTestId("submit");
-    //     const userName = screen.getByTestId("name")
-
-    //     userEvent.type(userName, "ankit");
-    //     userEvent.click(submitBtn);
-    //     const userInfo = screen.getByText("ankit")
-    //     expect(userInfo).toBeInTheDocument();
-    // })
+    test("after submit input field" , () => {
+        render(<Form />);
+        const event = {target: { value: "ankit"}};
+        const userName = screen.getByTestId("name")
+        fireEvent.change(userName,event);
+        expect(userName).toHaveValue("ankit");
+        const submitBtn = screen.getByTestId("submit");
+        fireEvent.click(submitBtn,event);
+        expect(userName).toBeInTheDocument();
+    })
 })

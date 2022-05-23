@@ -47,7 +47,7 @@ describe("Test the button in todo component" , () => {
     test("check delete button" , () => {
         render(<Todo />);
         const event = {target: { value: "ankit"}};
-        const inf = screen.getByTestId("del");
+        const inf = screen.getByTestId("deletebtn");
         fireEvent.click(inf,event);
         expect(inf).toHaveTextContent("ankit");
     })

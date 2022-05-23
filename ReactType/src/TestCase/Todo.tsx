@@ -32,7 +32,7 @@ const Todo = () => {
                     return(
                         <div className="todo">
                             <p> {element} </p>
-                            <button data-testid="del" onClick={() => dele(ind)}> Delete </button>
+                            <button data-testid="deletebtn" onClick={() => dele(ind)}> Delete </button>
                         </div>
                     )
                 })

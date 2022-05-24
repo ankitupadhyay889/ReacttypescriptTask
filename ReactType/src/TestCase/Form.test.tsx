@@ -6,7 +6,7 @@ describe("Test the form component" , () => {
     test("render the form component" , async() => {
         render(<Form />);
         const buttonList = await screen.findAllByRole("button");
-        // console.log(buttonList);
+        //! console.log(buttonList);
         // expect(buttonList).toHaveLength(3);
         expect(buttonList).toHaveLength(2);
     })

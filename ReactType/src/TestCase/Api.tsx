@@ -5,8 +5,8 @@ const fetchData : any = () => {
         .then(res => {
             return res.data.anime
         })
-        .catch(err => {
-            console.log(err)
+        .catch(erorr => {
+            console.log(erorr)
         })
 };
 

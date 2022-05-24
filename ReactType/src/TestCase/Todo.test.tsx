@@ -44,13 +44,29 @@ describe("Test the button in todo component" , () => {
         expect(inf).toBeInTheDocument();
     })
 
-    test("check delete button" , () => {
-        render(<Todo />);
-        const event = {target: { value: "ankit"}};
-        const inf = screen.getByTestId("deletebtn");
-        fireEvent.click(inf,event);
-        expect(inf).toHaveTextContent("ankit");
-    })
+    // test("check delete button" , () => {
+    //     render(<Todo />);
+    //     const event = {target: { value: "ankit"}};
+    //     const inf = screen.getByTestId("deletebtn");
+    //     fireEvent.click(inf,event);
+    //     expect(inf).toHaveTextContent("ankit");
+    // })
+
+    // test("check delete button" , () => {
+    //     const doc = render(<Todo />);
+    //     const inputElement = doc.getByTestId('input');
+    //     const createButtonElement = doc.getByTestId('add');
+    //     const todoCountElement = doc.getByTestId('todoCount');
+    //     fireEvent.change(inputElement, { target: { value: 'Feed my cat.' } });
+    //     fireEvent.click(createButtonElement);
+    //     const todo = doc.queryByTestId('todo');
+    //     const todoDeleteButton = doc.getByTestId('deleteButton');
+    //     fireEvent.click(todoDeleteButton);
+    //     const todos = doc.queryAllByTestId('todo');
+    //     expect(todoCountElement).toHaveTextContent('0 todos');
+    //     expect(todo).not.toBeInTheDocument();
+    //     expect(todos.length).toBe(0);
+    // })
 
     test("check after add button input field empty" , () => {
         render(<Todo />);

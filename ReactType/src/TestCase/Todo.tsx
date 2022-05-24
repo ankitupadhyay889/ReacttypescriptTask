@@ -24,13 +24,14 @@ const Todo = () => {
 
     return (
         <div>
+            <p data-testid="todoCount">{show.length} todos</p>
             <input data-testid="input" type="text" placeholder='adding' value={input} onChange={(e) => setinput(e.target.value)}/>
             <button data-testid="add" onClick={add}> Add </button>
             <br/><br/>
             {
                 show.map((element , ind:number) => {
                     return(
-                        <div className="todo">
+                        <div className="todo" data-testid="todo">
                             <p> {element} </p>
                             <button data-testid="deletebtn" onClick={() => dele(ind)}> Delete </button>
                         </div>

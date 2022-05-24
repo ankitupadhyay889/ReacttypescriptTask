@@ -4,7 +4,6 @@ import { render, screen} from '@testing-library/react';
 import E from "./E";
 
 // let rootContainer;
-
 // beforeEach(() => {
 //   rootContainer = document.createElement("div");
 //   document.body.appendChild(rootContainer);

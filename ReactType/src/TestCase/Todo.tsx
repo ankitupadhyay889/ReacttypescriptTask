@@ -4,7 +4,7 @@ const Todo = () => {
 
     const [input, setinput] = useState<any>("");
     const [show, setshow] = useState<any[]>([]);
-
+    
     const add = () => {
         if(!input){
             

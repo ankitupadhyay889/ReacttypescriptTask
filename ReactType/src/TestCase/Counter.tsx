@@ -21,4 +21,5 @@ return (
     </>
     );
 };
+
 export default Counter;

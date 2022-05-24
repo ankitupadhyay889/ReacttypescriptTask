@@ -1,6 +1,7 @@
 import { render, fireEvent, screen } from "@testing-library/react";
 import Counter from "./Counter";
 
+
 test("increments counter", () => {
     render(<Counter />);
     const counter = screen.getByTestId("counter");

@@ -4,7 +4,7 @@ const Todo = () => {
 
     const [input, setinput] = useState<any>("");
     const [show, setshow] = useState<any[]>([]);
-    
+
     const add = () => {
         if(!input){
             
@@ -21,7 +21,6 @@ const Todo = () => {
         })
         setshow(update);
     }
-
     return (
         <div>
             <p data-testid="todoCount">{show.length} todos</p>

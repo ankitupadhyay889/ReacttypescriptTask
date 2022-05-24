@@ -13,6 +13,7 @@ const Form = () => {
         setshow([...show , all]);
         setname("");
     }
+    
     const resetForm = () => {
         setname("")
     }

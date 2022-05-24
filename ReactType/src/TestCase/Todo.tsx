@@ -21,6 +21,7 @@ const Todo = () => {
         })
         setshow(update);
     }
+    
     return (
         <div>
             <p data-testid="todoCount">{show.length} todos</p>
